@@ -73,6 +73,10 @@ a {
   transition: left 0.3s ease;
 }
 
+.hero {
+  top: 140px;
+}
+
 @media (min-width: 800px) {
   .et-hero-tabs h1,
   .et-slide h1 {

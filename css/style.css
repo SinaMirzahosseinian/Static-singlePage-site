@@ -76,7 +76,18 @@ a {
 .hero {
   top: 140px;
 }
+.icons {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+}
 
+a {
+  color: black;
+}
+.item {
+  margin: 0 10px;
+}
 @media (min-width: 800px) {
   .et-hero-tabs h1,
   .et-slide h1 {

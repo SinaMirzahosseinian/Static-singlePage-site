@@ -1,5 +1,5 @@
 body {
-  font-family: "K2D", sans-serif;
+  font-family: "K2D";
 }
 
 a {
@@ -27,12 +27,11 @@ a {
 .et-hero-tabs h3,
 .et-slide h3 {
   font-size: 1rem;
-  letter-spacing: 0.3rem;
   opacity: 0.6;
 }
 
 .et-hero-tabs-container {
-  font-family: "Century Gothic";
+  font-family: "cursive";
   display: flex;
   flex-direction: row;
   position: absolute;
@@ -94,8 +93,12 @@ h1 {
 }
 
 h3 {
-  font-family: "K2D", sans-serif;
+  font-family: "K2D";
 }
+.tothetop {
+  margin-top: 200px;
+}
+
 .table {
   display: flex;
 }
@@ -106,7 +109,7 @@ h3 {
 }
 
 .margin-top {
-  margin-top : 20px
+  margin-top: 20px;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100, 400);
@@ -131,7 +134,7 @@ h3 {
   position: relative;
   text-align: center;
   color: black;
-  font-family: Lato;
+  font-family: "K2D";
   font-weight: 100;
   margin: 2rem;
 }
@@ -166,23 +169,65 @@ h3 {
   fill: none;
   stroke-width: 25;
   stroke-dasharray: 629;
-  stroke: #eee
+  stroke: #eee;
   opacity: 0.9;
   -webkit-animation: load 10s;
   animation: load 10s;
 }
 
-@media (min-width: 800px) {
-  .et-hero-tabs h1,
-  .et-slide h1 {
-    font-size: 3rem;
+@media (max-width: 800px) {
+  .progress {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
   }
-  .et-hero-tabs h3,
-  .et-slide h3 {
-    font-size: 1rem;
+  .progress > li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: "K2D";
+    font-weight: 100;
+    margin: 2rem;
   }
-
-  .et-hero-tab {
+  .progress > li:before {
+    content: attr(data-name);
+    position: absolute;
+    width: 100%;
+    bottom: -2rem;
+    font-weight: 400;
+  }
+  .progress > li:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    left: 0;
     font-size: 1rem;
+    text-align: center;
+  }
+  .progress svg {
+    width: 5rem;
+    height: 5rem;
+  }
+  .progress svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
+  .progress svg:nth-child(2) path {
+    fill: none;
+    stroke-width: 25;
+    stroke-dasharray: 629;
+    stroke: #eee;
+    opacity: 0.9;
+    -webkit-animation: load 10s;
+    animation: load 10s;
+  }
+  .mobile {
+    margin-top: 30px;
   }
 }

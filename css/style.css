@@ -96,6 +96,18 @@ h1 {
 h3 {
   font-family: "K2D", sans-serif;
 }
+.table {
+  display: flex;
+}
+.table-item {
+  font-size: 20px;
+  margin-right: 30px;
+  margin-top: 60px;
+}
+
+.margin-top {
+  margin-top : 20px
+}
 
 @import url(https://fonts.googleapis.com/css?family=Lato:100, 400);
 @-webkit-keyframes load {
